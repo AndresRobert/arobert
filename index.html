@@ -11,7 +11,23 @@
         <script src="https://acode.cl/cdn/acode.0.1.js" type="text/javascript"></script>
     </head>
     <body class="inverted-bg">
-        <main>
+        <button id="fabEN" class="fab accent-bg inverted" style="line-height: 3em">EN</button>
+        <button id="fabES" class="fab primary-bg inverted hidden" style="line-height: 3em">ES</button>
+        <script>
+            on.click('fabEN', () => {
+                toggle.class('es', 'hidden');
+                toggle.class('fabES', 'hidden');
+                toggle.class('en', 'hidden');
+                toggle.class('fabEN', 'hidden');
+            });
+            on.click('fabES', () => {
+                toggle.class('es', 'hidden');
+                toggle.class('fabES', 'hidden');
+                toggle.class('en', 'hidden');
+                toggle.class('fabEN', 'hidden');
+            });
+        </script>
+        <main id="es">
             <section>
                 <div class="hideOnSmall"></div>
                 <div id="info" class="card f3 main-bg">
@@ -22,7 +38,6 @@
                             <div>Ingeniero Informático</div>
                             <div>KANBAN Leader | PHP Developer</div>
                             <div>andresrobert@icloud.com</div>
-                            <div>+569 5209 4004</div>
                             <div>+569 5209 4004</div>
                             <div><a class="noStyle primary" href="https://www.linkedin.com/in/andresrobert/" target="_blank">LinkedIn</a></div>
                             <div><a class="noStyle primary" href="https://github.com/AndresRobert" target="_blank">Github</a></div>
@@ -36,7 +51,7 @@
                             <div><a class="noStyle primary" href="https://www.acode.cl/" target="_blank">ACODE</a></div>
                             <div><a class="noStyle primary" href="http://uprogme.blogspot.com/" target="_blank">Unusual Programming</a></div>
                             <div><a class="noStyle primary" href="http://liceosero.blogspot.com/" target="_blank">Liceo SERO</a></div>
-                            <div><a class="noStyle primary" href="http://kubernite.blogspot.com/" target="_blank">Cyber School</a></div>
+                            <div><a class="noStyle primary" href="http://kubernite.blogspot.com/" target="_blank">Ciber School</a></div>
                             <div><a class="noStyle primary" href="https://twitter.com/ea_robert" target="_blank">Twitter</a></div>
                             <div><a class="noStyle primary" href="https://soundcloud.com/vieuxd/tracks" target="_blank">SoundCloud</a>
                             </div>
@@ -185,9 +200,183 @@
                 </div>
             </section>
         </main>
-        <footer class="main-bg main">
-            Developed with <a class="noStyle primary" href="https://www.acode.cl">Simple FrameWork</a>
-            <img src="/inc/img/logo_l.svg" class="toRight" style="height: 1.5em">
+        <main id="en" class="hidden">
+            <section>
+                <div class="hideOnSmall"></div>
+                <div id="infoEN" class="card f3 main-bg">
+                    <div id="infoTitleEN" class="clickable title flat">Andres Robert</div>
+                    <section>
+                        <div><img src="/inc/img/self.jpg" class="circle x5"></div>
+                        <div class="f10">
+                            <div>Computer Engineer</div>
+                            <div>KANBAN Leader | PHP Developer</div>
+                            <div>andresrobert@icloud.com</div>
+                            <div>+569 5209 4004</div>
+                            <div>
+                                <a class="noStyle accent" href="https://www.linkedin.com/in/andresrobert/" target="_blank">LinkedIn</a>
+                            </div>
+                            <div><a class="noStyle accent" href="https://github.com/AndresRobert" target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="projEN" class="card f3 hidden main-bg">
+                    <div id="projTitleEN" class="clickable title flat">Projects</div>
+                    <section>
+                        <div>
+                            <div><a class="noStyle accent" href="https://www.acode.cl/" target="_blank">ACODE</a></div>
+                            <div><a class="noStyle accent" href="http://uprogme.blogspot.com/" target="_blank">Unusual Programming</a></div>
+                            <div><a class="noStyle accent" href="http://liceosero.blogspot.com/" target="_blank">Liceo SERO</a></div>
+                            <div><a class="noStyle accent" href="http://kubernite.blogspot.com/" target="_blank">Ciber School</a></div>
+                            <div><a class="noStyle accent" href="https://twitter.com/ea_robert" target="_blank">Twitter</a></div>
+                            <div><a class="noStyle accent" href="https://soundcloud.com/vieuxd/tracks" target="_blank">SoundCloud</a></div>
+                        </div>
+                    </section>
+                </div>
+                <div class="hideOnSmall"></div>
+                <script>
+                    on.click('infoTitleEN', () => {
+                        toggle.class('infoEN', 'hidden');
+                        toggle.class('projEN', 'hidden');
+                    });
+                    on.click('projTitleEN', () => {
+                        toggle.class('infoEN', 'hidden');
+                        toggle.class('projEN', 'hidden');
+                    });
+                </script>
+            </section>
+            <section>
+                <div class="card main-bg">
+                    <ul>
+                        <li class="title accent" style="background-color: transparent">Professional Profile</li>
+                        <li>Experience on PHP/MariaDB/MySQL y HTML/CSS/JS</li>
+                        <li>Frameworks: CakePHP, Bootstrap, Materialize, Semantic UI y JQuery</li>
+                        <li>Formal training on Java/Oracle 12g, C#/SQL SERVER, Android (Java), Swift</li>
+                        <li>Interested on dynamic modeling, artificial intelligence, multi-scale development and education & sustainability project management</li>
+                        <li class="title accent">Recent Experience</li>
+                        <li>
+                            <div>2017 - Present</div>
+                            <div>KANBAN Leader & PHP Developer / Mobile Developer</div>
+                            <div>PeopleFIRST S.A., Santiago, Chile</div>
+                        </li>
+                        <li>
+                            <div>2016 - 2017</div>
+                            <div>cakePHP Developer / Mobile Developer</div>
+                            <div>PMH SpA, Santiago, Chile</div>
+                        </li>
+                        <li>
+                            <div>2012 - 2015</div>
+                            <div>System Administrator B2B</div>
+                            <div>Moletto Hnos. S.A., Santiago, Chile</div>
+                        </li>
+                        <li class="title accent">Background</li>
+                        <li>
+                            <div>2013 - 2016</div>
+                            <div>Informatics Engineering</div>
+                            <div>DUOC UC, Santiago, Chile</div>
+                        </li>
+                        <li>
+                            <div>2002 - 2005</div>
+                            <div>Physics Engineering (7 sem)</div>
+                            <div>USACH, Santiago, Chile</div>
+                        </li>
+                        <li>
+                            <div>1998 - 2001</div>
+                            <div>Computerized Industrial Processes</div>
+                            <div>Liceo Andes DUOC UC, Santiago, Chile</div>
+                        </li>
+                        <li class="collapse-next close">Referrals</li>
+                        <li>
+                            <section>
+                                <div>
+                                    <div>Andrés Poblete</div>
+                                    <div>CTO at PMH SpA</div>
+                                    <div>apoblete@pmh.cl</div>
+                                </div>
+                                <div>
+                                    <div>Enrique Carrillo</div>
+                                    <div>COO at Moletto Hnos. S.A.</div>
+                                    <div>ecarrillo@moletto.cl</div>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="collapse-next close">More Training</li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <div>2019 (Udemy)</div>
+                                    <div>Progresive Web Apps</div>
+                                    <div>Ray Viljoen</div>
+                                </li>
+                                <li>
+                                    <div>2017 (Coursera)</div>
+                                    <div>Algorithms II</div>
+                                    <div>Prof. Robert Sedgewick</div>
+                                </li>
+                                <li>
+                                    <div>2016 (Coursera)</div>
+                                    <div>Algorithms I</div>
+                                    <div>Prof. Robert Sedgewick</div>
+                                </li>
+                                <li>
+                                    <div>2015 (Iversity)</div>
+                                    <div>Cyber Security & Human Rights</div>
+                                    <div>Prof. Anja Mihr</div>
+                                </li>
+                                <li>
+                                    <div>2013 (Training)</div>
+                                    <div>Quality on Processes</div>
+                                    <div>ISO 9001, Moletto Hnos. S.A.</div>
+                                </li>
+                                <li>
+                                    <div>2011 (Training)</div>
+                                    <div>Discrimination & Stereotypes</div>
+                                    <div>Tim Horton's, TDL Group</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="collapse-next close">More Experience</li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <div>2011 - 2012</div>
+                                    <div>Store Manager</div>
+                                    <div>Tim Horton's TDL GROUP, Canada</div>
+                                </li>
+                                <li>
+                                    <div>2010 - 2011</div>
+                                    <div>Brand Ambassador</div>
+                                    <div>Metro Magazine, Canada</div>
+                                </li>
+                                <li>
+                                    <div>2008 - 2010</div>
+                                    <div>Warehouse System Administrator</div>
+                                    <div>Moletto Hnos. S.A., Chile</div>
+                                </li>
+                                <li>
+                                    <div>2006 - 2008</div>
+                                    <div>Help Desk</div>
+                                    <div>Notebook Center S.A., Chile</div>
+                                </li>
+                                <li>
+                                    <div>2005 - 2006</div>
+                                    <div>Pilot</div>
+                                    <div>Metro S.A., Chile</div>
+                                </li>
+                                <li>
+                                    <div>2002 - 2005</div>
+                                    <div>Warehouse Clerk</div>
+                                    <div>Logística S.A., Chile</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <script>init.collapse();</script>
+                </div>
+            </section>
+        </main>
+        <footer class="main-bg main" style="height: 2.7em;line-height: 1.1em;">
+            <img src="/inc/img/logo_l.svg" class="toLeft" style="height: 1em;margin: 0 1em 0 0">Developed with <a class="noStyle primary" href="https://www.acode.cl">Simple FrameWork</a>
         </footer>
     </body>
 </html>
