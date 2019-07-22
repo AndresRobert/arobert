@@ -21,15 +21,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="380" column="96" selection-start-line="380" selection-start-column="96" selection-end-line="380" selection-end-column="96" />
+            <state relative-caret-position="167">
+              <caret line="208" column="45" selection-start-line="208" selection-start-column="45" selection-end-line="208" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#section#1;n#main#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -55,6 +53,7 @@
     <findStrings>
       <find>a {</find>
       <find>primary</find>
+      <find>self</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563761051265</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="done">
+      <created>1563763441157</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563763441157</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -210,7 +216,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="css framework change" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/inc/img/icon/ok.svg">
@@ -243,15 +250,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="380" column="96" selection-start-line="380" selection-start-column="96" selection-end-line="380" selection-end-column="96" />
+        <state relative-caret-position="167">
+          <caret line="208" column="45" selection-start-line="208" selection-start-column="45" selection-end-line="208" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#section#1;n#main#1;n#body#0;n#html#0;n#!!top" expanded="true" />
