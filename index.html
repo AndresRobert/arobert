@@ -1,225 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="inverted-bg">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="apple-touch-icon" sizes="192x192" href="inc/img/app_192.png">
+        <link rel="apple-touch-startup-image" href="inc/img/app_192.png">
+        <link rel="icon" href="/inc/favicon.png" type="image/x-icon"/>
         <title>Andrés Robert</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/acode.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-        <script src="/js/acode.js"></script>
-        <script>
-            $(document).on('click', '.js-lang_change', function(){
-                $('#es').fadeToggle();
-                $('#en').fadeToggle();
-                $('body').toggleClass('bg-grey-14').toggleClass('bg-black');
-            });
-        </script>
+        <link href="https://acode.cl/cdn/acode.0.1.css" rel="stylesheet" type="text/css">
+        <script src="https://acode.cl/cdn/acode.0.1.js" type="text/javascript"></script>
     </head>
-    <body class="bg-grey-14">
-        <main id="es">
-            <aside>
-                <scroll>
-                    <div class="gap-s"></div>
-                    <img class="js-lang_change div circle-l border-red border-xs center clickable" src="img/self.jpg">
-                    <div class="gap-s"></div>
-                    <hr>
-                    <div class="info"><i class="fas fa-address-book red fixw-m fixh-m"></i><div class="data">Andres Robert</div></div>
-                    <div class="info"><i class="fas fa-graduation-cap red fixw-m fixh-m"></i><div class="data">Ingeniero Informático</div></div>
-                    <div class="info"><i class="fas fa-envelope-square red fixw-m fixh-m"></i><div class="data">andresrobert@icloud.com</div></div>
-                    <div class="info"><i class="fas fa-mobile-alt red fixw-m fixh-m"></i><div class="data">+569 5209 4004</div></div>
-                    <a class="div info hred" href="https://www.linkedin.com/in/andresrobert/"><i class="fab fa-linkedin red fixw-m fixh-m"></i><div class="data">Linkedin</div></a>
-                    <a class="div info hred" href="https://github.com/AndresRobert"><i class="fab fa-github-square red fixw-m fixh-m"></i><div class="data">Github</div></a>
-                    <a class="div info hred" href="https://twitter.com/ea_robert"><i class="fab fa-twitter-square red fixw-m fixh-m"></i><div class="data">Twitter</div></a>
-                    <a class="div info hred" href="https://soundcloud.com/vieuxd/tracks"><i class="fab fa-soundcloud red fixw-m fixh-m"></i><div class="data">SoundCloud</div></a>
-                    <a class="div info hred" href="http://liceosero.blogspot.com/"><i class="fab fa-blogger red fixw-m fixh-m"></i><div class="data">Liceo SERO</div></a>
-                    <a class="div info hred" href="http://kubernite.blogspot.com/"><i class="fab fa-blogger red fixw-m fixh-m"></i><div class="data">Cyber School</div></a>
-                    <a class="div info hred" href="http://uprogme.blogspot.com/"><i class="fab fa-blogger red fixw-m fixh-m"></i><div class="data">Unusual Programming</div></a>
-                    <a class="div info hred" href="http://www.acode.cl/"><i class="fab fa-html5 red fixw-m fixh-m"></i><div class="data">ACODE</div></a>
-                </scroll>
-            </aside>
-            <section class="r_aside">
-                <article class="bg-white border-grey-14 border-xxs">
-                    <h4>Perfil Profesional</h4>
-                    <p>
-                        <strong>Experiencia en</strong> desarrollo de sistemas con backend PHP/MariaDB y frontend HTML/CSS/JS. Frameworks manejados: CakePHP, Laravel, Bootstrap, Materialize, Semantic UI y JQuery.
-                    </p>
-                    <p>
-                        <strong>Capacitado en</strong> desarrollo de sistemas con backend Java/Oracle 12g, C#/SQL SERVER y frontend HTML/CSS/JS.
-                    </p>
-                    <p>
-                        <strong>Interesado en</strong> modelamiento dinámico, Inteligencia Artificial, desarrollo multiescala y gestión de proyectos de educación y sustentabilidad.
-                    </p>
-                </article>
-                <div class="gap-s"></div>
-                <article class="bg-white border-grey-14 border-xxs">
-                    <h4>Experiencia</h4>
-                    <h6 class="no_gap">2017 - Presente | <strong>Desarrollador FullStack / Móvil</strong> | PeopleFIRST, Av Presidente Kennedy 7500, Las Condes</h6>
-                    <p>Desarrollo backend en PHP y MySQL, OOP y microServices, desarrollo FrontEnd HTML5, CSS3/Materialize/Bootstrap, Jquery, desarrollo móvil Aplicaciones nativas iOS (Swift) y Android</p>
-                    <h6 class="no_gap">2016 - 2017 | <strong>Desarrollador FullStack / Móvil</strong> | PMH SpA, Ahumada 131, Santiago</h6>
-                    <p>Desarrollo backend en MVC cakePHP, MySQL, microServices y Aplicaciones nativas Android</p>
-                </article>
-                <article class="bg-white border-grey-14 border-xxs">
-                    <h4>Educación</h4>
-                    <h6 class="no_gap">2013 - 2016 | <strong>Ingeniería Informática</strong> | DuocUC, Av Antonio Varas 666, Providencia</h6>
-                    <p>Egresado y titulado con votos de distinción <a href="http://www.duoc.cl"><i class="fas fa-external-link-alt red"></i></a></p>
-                    <h6 class="no_gap">1998 - 2001 | <strong>Procesos Industriales Computarizados</strong> | Liceo Andes DuocUC, Domingo Sta María 3640, Renca</h6>
-                    <p>Egresado con distinción <a href="http://www.duoc.cl/liceopolitecnicoandes"><i class="fas fa-external-link-alt red"></i></a></p>
-                </article>
-                <article class="bg-white border-grey-14 border-xxs">
-                    <h4>Referencias</h4>
-                    <h6 class="no_gap"><strong>Andrés Poblete</strong>, Gerente de Informática en PMH SpA</h6>
-                    <p><i class="fas fa-mobile-alt red fixw-m"></i> +569 6733 4261 | <i class="far fa-envelope red fixw-m"></i> apoblete@pmh.cl</p>
-                    <h6 class="no_gap"><strong>Enrique Carrillo</strong>, Gerente de Operaciones en Moletto Hnos. S.A.</h6>
-                    <p><i class="fas fa-mobile-alt red fixw-m"></i> +569 7498 5982 | <i class="far fa-envelope red fixw-m"></i> ecarrillo@moletto.cl</p>
-                </article>
-                <div class="gap-s"></div>
-                <article class="bg-white border-grey-14 border-xxs">
-                    <h4>Más Estudios</h4>
-                    <h6 class="no_gap">2015</h6>
-                    <p>
-                        MOOC - Coursera: <i>"Algorithms I & II"</i> - Prof. Robert Sedgewick, Princeton University
-                        <br />MOOC - Iversity: <i>"Cyber Security & Human Rights"</i> - Prof. Anja Mihr, Netherland Institute of Human Rights
-                        <br />MOOC - Capacitación: <i>"Calidad en los Procesos"</i> - ISO 9001, Moletto Hnos. S.A.
-                    </p>
-                    <h6 class="no_gap">2011</h6>
-                    <p>MOOC - Capacitación: <i>"Discrimination & Stereotypes"</i> - Tim Horton's, TDL Group</p>
-                    <h6 class="no_gap">2002 - 2005</h6>
-                    <p>Universidad: <i>"Ingeniería Física"</i> - USACH, 7 semestres aprobados</p>
-                </article>
-                <article class="bg-white border-grey-14 border-xxs">
-                    <h4>Más Experiencias</h4>
-                    <h6 class="no_gap">2012 - 2015</h6>
-                    <p>Administrador de Sistemas B2B - Moletto Hnos. S.A., Puerto Madero 9710, Pudahuel</p>
-                    <h6 class="no_gap">2011 - 2012</h6>
-                    <p>Store Manager - Tim Horton's TDL GROUP, Front Street Store, Toronto, ON, Canada</p>
-                    <h6 class="no_gap">2010 - 2011</h6>
-                    <p>Brand Ambassador - Metro Magazine, Bay Street, Toronto, ON, Canada</p>
-                    <h6 class="no_gap">2008 - 2010</h6>
-                    <p>Administrador de Sistemas de Bodega - Moletto Hnos. S.A., Matucana 1221, Santiago</p>
-                    <h6 class="no_gap">2006 - 2008</h6>
-                    <p>Soporte Software - Notebook Center, General del Canto 123, Providencia</p>
-                    <h6 class="no_gap">2005 - 2006</h6>
-                    <p>Conductor de Tren Subterraneo - Metro S.A., Av. Libertador Bernardo O'Higgins 1414, Santiago</p>
-                    <h6 class="no_gap">2002 - 2005</h6>
-                    <p>Administrativo Bodega - Logística S.A., Matucana 1221, Santiago</p>
-                </article>
-                <div class="gap-s"></div>
-                <article class="bg-white border-grey-14 border-xxs">
-                    <p>
-                        <h4>Más Información</h4>
-                        <i class="fas fa-map-marker-alt red fixw-l"></i> Santo Domingo 748, Santiago
-                        <br /><i class="fas fa-venus-mars red fixw-l"></i> Casado
-                        <br /><i class="far fa-flag red fixw-l"></i> Chilena
-                        <br /><i class="fas fa-child red fixw-l"></i> 1 hijo
-                        <br /><i class="fas fa-medkit red fixw-l"></i> Consalud
-                        <br /><i class="fas fa-piggy-bank red fixw-l"></i> AFP Modelo
-                    </p>
-                </article>
+    <body class="inverted-bg">
+        <main>
+            <section>
+                <div class="hideOnSmall"></div>
+                <div id="info" class="card f3 main-bg">
+                    <div id="infoTitle" class="clickable title flat">Andres Robert</div>
+                    <section>
+                        <div><img src="/inc/img/self.jpg" class="circle x5"></div>
+                        <div class="f10">
+                            <div>Ingeniero Informático</div>
+                            <div>KANBAN Leader | PHP Developer</div>
+                            <div>andresrobert@icloud.com</div>
+                            <div>+569 5209 4004</div>
+                            <div>+569 5209 4004</div>
+                            <div><a class="noStyle primary" href="https://www.linkedin.com/in/andresrobert/" target="_blank">LinkedIn</a></div>
+                            <div><a class="noStyle primary" href="https://github.com/AndresRobert" target="_blank">Github</a></div>
+                        </div>
+                    </section>
+                </div>
+                <div id="proj" class="card f3 hidden main-bg">
+                    <div id="projTitle" class="clickable title flat">Proyectos</div>
+                    <section>
+                        <div>
+                            <div><a class="noStyle primary" href="https://www.acode.cl/" target="_blank">ACODE</a></div>
+                            <div><a class="noStyle primary" href="http://uprogme.blogspot.com/" target="_blank">Unusual Programming</a></div>
+                            <div><a class="noStyle primary" href="http://liceosero.blogspot.com/" target="_blank">Liceo SERO</a></div>
+                            <div><a class="noStyle primary" href="http://kubernite.blogspot.com/" target="_blank">Cyber School</a></div>
+                            <div><a class="noStyle primary" href="https://twitter.com/ea_robert" target="_blank">Twitter</a></div>
+                            <div><a class="noStyle primary" href="https://soundcloud.com/vieuxd/tracks" target="_blank">SoundCloud</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="hideOnSmall"></div>
+                <script>
+                    on.click('infoTitle', () => {
+                        toggle.class('info', 'hidden');
+                        toggle.class('proj', 'hidden');
+                    });
+                    on.click('projTitle', () => {
+                        toggle.class('info', 'hidden');
+                        toggle.class('proj', 'hidden');
+                    });
+                </script>
+            </section>
+            <section>
+                <div class="card main-bg">
+                    <ul>
+                        <li class="title primary" style="background-color: transparent">Perfil Profesional</li>
+                        <li>Experiencia en PHP/MariaDB/MySQL y HTML/CSS/JS</li>
+                        <li>Frameworks: CakePHP, Bootstrap, Materialize, Semantic UI y JQuery</li>
+                        <li>Capacitado en Java/Oracle 12g, C#/SQL SERVER, Android (Java), Swift</li>
+                        <li>Interesado en modelamiento dinámico, inteligencia artificial, desarrollo multiescala y gestión de proyectos de educación y sustentabilidad.</li>
+                        <li class="title primary">Experiencia Reciente</li>
+                        <li>
+                            <div>2017 - Presente</div>
+                            <div>KANBAN Leader & PHP Developer / Mobile Developer</div>
+                            <div>PeopleFIRST S.A., Santiago, Chile</div>
+                        </li>
+                        <li>
+                            <div>2016 - 2017</div>
+                            <div>cakePHP Developer / Mobile Developer</div>
+                            <div>PMH SpA, Santiago, Chile</div>
+                        </li>
+                        <li>
+                            <div>2012 - 2015</div>
+                            <div>Administrador Sistema B2B</div>
+                            <div>Moletto Hnos. S.A., Santiago, Chile</div>
+                        </li>
+                        <li class="title primary">Educación</li>
+                        <li>
+                            <div>2013 - 2016</div>
+                            <div>Ingeniería Informática</div>
+                            <div>DUOC UC, Santiago, Chile</div>
+                        </li>
+                        <li>
+                            <div>2002 - 2005</div>
+                            <div>Ingeniería Física (7 sem)</div>
+                            <div>USACH, Santiago, Chile</div>
+                        </li>
+                        <li>
+                            <div>1998 - 2001</div>
+                            <div>Procesos Industriales Computarizados</div>
+                            <div>Liceo Andes DUOC UC, Santiago, Chile</div>
+                        </li>
+                        <li class="collapse-next close">Referencias</li>
+                        <li>
+                            <section>
+                                <div>
+                                    <div>Andrés Poblete</div>
+                                    <div>Gerente Informática - PMH SpA</div>
+                                    <div>apoblete@pmh.cl</div>
+                                </div>
+                                <div>
+                                    <div>Enrique Carrillo</div>
+                                    <div>Gerente de Operaciones - Moletto Hnos. S.A.</div>
+                                    <div>ecarrillo@moletto.cl</div>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="collapse-next close">Más Estudios</li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <div>2019 (Udemy)</div>
+                                    <div>Progresive Web Apps</div>
+                                    <div>Ray Viljoen</div>
+                                </li>
+                                <li>
+                                    <div>2017 (Coursera)</div>
+                                    <div>Algorithms II</div>
+                                    <div>Prof. Robert Sedgewick</div>
+                                </li>
+                                <li>
+                                    <div>2016 (Coursera)</div>
+                                    <div>Algorithms I</div>
+                                    <div>Prof. Robert Sedgewick</div>
+                                </li>
+                                <li>
+                                    <div>2015 (Iversity)</div>
+                                    <div>Cyber Security & Human Rights</div>
+                                    <div>Prof. Anja Mihr</div>
+                                </li>
+                                <li>
+                                    <div>2013 (Capacitación)</div>
+                                    <div>Calidad en los Procesos</div>
+                                    <div>ISO 9001, Moletto Hnos. S.A.</div>
+                                </li>
+                                <li>
+                                    <div>2011 (Capacitación)</div>
+                                    <div>Discrimination & Stereotypes</div>
+                                    <div>Tim Horton's, TDL Group</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="collapse-next close">Más Experiencias</li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <div>2011 - 2012</div>
+                                    <div>Store Manager</div>
+                                    <div>Tim Horton's TDL GROUP, Canada</div>
+                                </li>
+                                <li>
+                                    <div>2010 - 2011</div>
+                                    <div>Brand Ambassador</div>
+                                    <div>Metro Magazine, Canada</div>
+                                </li>
+                                <li>
+                                    <div>2008 - 2010</div>
+                                    <div>Administrador de Sistemas de Bodega</div>
+                                    <div>Moletto Hnos. S.A., Chile</div>
+                                </li>
+                                <li>
+                                    <div>2006 - 2008</div>
+                                    <div>Soporte en Software</div>
+                                    <div>Notebook Center S.A., Chile</div>
+                                </li>
+                                <li>
+                                    <div>2005 - 2006</div>
+                                    <div>Conductor</div>
+                                    <div>Metro S.A., Chile</div>
+                                </li>
+                                <li>
+                                    <div>2002 - 2005</div>
+                                    <div>Administrativo de Bodega</div>
+                                    <div>Logística S.A., Chile</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <script>init.collapse();</script>
+                </div>
             </section>
         </main>
-        <main id="en" style="display: none;">
-            <aside class="bg-gray-4 grey-14 border-grey-1 border-xxs dark">
-                <scroll>
-                    <div class="gap-s"></div>
-                    <img class="js-lang_change div circle-l border-blue border-xs center clickable" src="img/selfi.jpg">
-                    <div class="gap-s"></div>
-                    <hr>
-                    <div class="info"><i class="fas fa-address-book blue fixw-m fixh-m"></i><div class="data">Andres Robert</div></div>
-                    <div class="info"><i class="fas fa-graduation-cap blue fixw-m fixh-m"></i><div class="data">Computer Engineer</div></div>
-                    <div class="info"><i class="fas fa-envelope-square blue fixw-m fixh-m"></i><div class="data">andresrobert@icloud.com</div></div>
-                    <div class="info"><i class="fas fa-mobile-alt blue fixw-m fixh-m"></i><div class="data">+569 5209 4004</div></div>
-                    <a class="div info hteal" href="https://www.linkedin.com/in/andresrobert/"><i class="fab fa-linkedin blue fixw-m fixh-m"></i><div class="data">Linkedin</div></a>
-                    <a class="div info hteal" href="https://github.com/AndresRobert"><i class="fab fa-github-square blue fixw-m fixh-m"></i><div class="data">Github</div></a>
-                    <a class="div info hteal" href="https://twitter.com/ea_robert"><i class="fab fa-twitter-square blue fixw-m fixh-m"></i><div class="data">Twitter</div></a>
-                    <a class="div info hteal" href="https://soundcloud.com/vieuxd/tracks"><i class="fab fa-soundcloud blue fixw-m fixh-m"></i><div class="data">SoundCloud</div></a>
-                    <a class="div info hteal" href="http://liceosero.blogspot.com/"><i class="fab fa-blogger blue fixw-m fixh-m"></i><div class="data">Liceo SERO</div></a>
-                    <a class="div info hteal" href="http://kubernite.blogspot.com/"><i class="fab fa-blogger blue fixw-m fixh-m"></i><div class="data">Cyber School</div></a>
-                    <a class="div info hteal" href="http://uprogme.blogspot.com/"><i class="fab fa-blogger blue fixw-m fixh-m"></i><div class="data">Unusual Programming</div></a>
-                    <a class="div info hteal" href="http://www.acode.cl/"><i class="fab fa-html5 blue fixw-m fixh-m"></i><div class="data">ACODE</div></a>
-                </scroll>
-            </aside>
-            <section class="r_aside">
-                <article class="bg-gray-4 grey-14 border-grey-1 border-xxs">
-                    <h4>Professional Profile</h4>
-                    <p>
-                        <strong>Experience in</strong> backend development: PHP/MariaDB, frontend development: HTML/CSS/JS, Frameworks: CakePHP, Laravel, Bootstrap, Materialize, Semantic UI y JQuery.
-                    </p>
-                    <p>
-                        <strong>Knowledge in</strong> backend development: Java/Oracle 12g, C#/SQL SERVER, frontend development: HTML/CSS/JS.
-                    </p>
-                    <p>
-                        <strong>Interested in</strong> dynamic database modeling, Artificial Intelligence, scalable development and Project Management in Sustainability and Educational Ideas.
-                    </p>
-                </article>
-                <div class="gap-s"></div>
-                <article class="bg-gray-4 grey-14 border-grey-1 border-xxs">
-                    <h4>Experience</h4>
-                    <h6 class="no_gap">2017 - Now | <strong>FullStack / Mobile Developer</strong> | PeopleFIRST, Av Presidente Kennedy 7500, Las Condes, Chile</h6>
-                    <p>Backend development: PHP & MySQL, OOP & microServices, FrontEnd development: HTML5, CSS3/Materialize/Bootstrap, Jquery, Mobile development: Native iOS (Swift) and Android</p>
-                    <h6 class="no_gap">2016 - 2017 | <strong>FullStack / Mobile Developer</strong> | PMH SpA, Ahumada 131, Santiago, Chile</h6>
-                    <p>Backend development: MVC cakePHP, MySQL, microServices and Native Android apps</p>
-                </article>
-                <article class="bg-gray-4 grey-14 border-grey-1 border-xxs">
-                    <h4>Education</h4>
-                    <h6 class="no_gap">2013 - 2016 | <strong>Computer Engineer</strong> | DuocUC, Av Antonio Varas 666, Providencia</h6>
-                    <p>Professional degree <a href="http://www.duoc.cl"><i class="fas fa-external-link-alt blue"></i></a></p>
-                    <h6 class="no_gap">1998 - 2001 | <strong>Computarized Industrial Process Technician</strong> | Liceo Andes DuocUC, Domingo Sta María 3640, Renca, Chile</h6>
-                    <p>Professional degree <a href="http://www.duoc.cl/liceopolitecnicoandes"><i class="fas fa-external-link-alt blue"></i></a></p>
-                </article>
-                <article class="bg-gray-4 grey-14 border-grey-1 border-xxs">
-                    <h4>Referals</h4>
-                    <h6 class="no_gap"><strong>Andrés Poblete</strong>, IT CEO PMH SpA</h6>
-                    <p><i class="fas fa-mobile-alt blue fixw-m"></i> +569 6733 4261 | <i class="far fa-envelope blue fixw-m"></i> apoblete@pmh.cl</p>
-                    <h6 class="no_gap"><strong>Enrique Carrillo</strong>, PMO Moletto Hnos. S.A.</h6>
-                    <p><i class="fas fa-mobile-alt blue fixw-m"></i> +569 7498 5982 | <i class="far fa-envelope blue fixw-m"></i> ecarrillo@moletto.cl</p>
-                </article>
-                <div class="gap-s"></div>
-                <article class="bg-gray-4 grey-14 border-grey-1 border-xxs">
-                    <h4>More Studies</h4>
-                    <h6 class="no_gap">2015</h6>
-                    <p>
-                        MOOC - Coursera: <i>"Algorithms I & II"</i> - Prof. Robert Sedgewick, Princeton University
-                        <br />MOOC - Iversity: <i>"Cyber Security & Human Rights"</i> - Prof. Anja Mihr, Netherland Institute of Human Rights
-                        <br />Course: <i>"Quality in Processes"</i> - ISO 9001, Moletto Hnos. S.A.
-                    </p>
-                    <h6 class="no_gap">2011</h6>
-                    <p>Course: <i>"Discrimination & Stereotypes"</i> - Tim Horton's, TDL Group</p>
-                    <h6 class="no_gap">2002 - 2005</h6>
-                    <p>University: <i>"Physics Engineer"</i> - USACH, 7 terms approved</p>
-                </article>
-                <article class="bg-gray-4 grey-14 border-grey-1 border-xxs">
-                    <h4>More Experiences</h4>
-                    <h6 class="no_gap">2012 - 2015</h6>
-                    <p>B2B IT Manager - Moletto Hnos. S.A., Puerto Madero 9710, Pudahuel, Chile</p>
-                    <h6 class="no_gap">2011 - 2012</h6>
-                    <p>Store Manager - Tim Horton's TDL GROUP, Front Street Store, Toronto, ON, Canada</p>
-                    <h6 class="no_gap">2010 - 2011</h6>
-                    <p>Brand Ambassador - Metro Magazine, Bay Street, Toronto, ON, Canada</p>
-                    <h6 class="no_gap">2008 - 2010</h6>
-                    <p>Warehouse IT Manager - Moletto Hnos. S.A., Matucana 1221, Santiago, Chile</p>
-                    <h6 class="no_gap">2006 - 2008</h6>
-                    <p>HelpDesk - Notebook Center, General del Canto 123, Providencia, Chile</p>
-                    <h6 class="no_gap">2005 - 2006</h6>
-                    <p>Subway Train Pilot - Metro S.A., Av. Libertador Bernardo O'Higgins 1414, Santiago, Chile</p>
-                    <h6 class="no_gap">2002 - 2005</h6>
-                    <p>Warehouse Clerk - Logística S.A., Matucana 1221, Santiago, Chile</p>
-                </article>
-                <div class="gap-s"></div>
-                <article class="bg-gray-4 grey-14 border-grey-1 border-xxs">
-                    <p>
-                        <h4>More Info</h4>
-                        <i class="fas fa-map-marker-alt blue fixw-l"></i> Santo Domingo 748, Santiago, Chile
-                        <br /><i class="fas fa-venus-mars blue fixw-l"></i> Married
-                        <br /><i class="far fa-flag blue fixw-l"></i> Chilean
-                        <br /><i class="fas fa-child blue fixw-l"></i> 1 son
-                        <br /><i class="fas fa-medkit blue fixw-l"></i> Consalud
-                        <br /><i class="fas fa-piggy-bank blue fixw-l"></i> AFP Modelo
-                    </p>
-                </article>
-            </section>
-        </main>
+        <footer class="main-bg main">
+            Developed with <a class="noStyle secondary" href="https://www.acode.cl">Simple FrameWork</a>
+            <img src="/inc/img/logo_l.svg" class="toRight" style="height: 1.5em">
+        </footer>
     </body>
 </html>

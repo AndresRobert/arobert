@@ -1,0 +1,42 @@
+{
+  "short_name": "ACODE",
+  "name": "Simple Framework",
+  "gcm_sender_id": "1078136658449",
+  "icons": [
+    {
+      "src": "/inc/img/app_48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/inc/img/app_96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/inc/img/app_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/inc/img/app_144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/inc/img/app_152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/inc/img/app_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "black",
+  "background_color": "#333",
+  "start_url": "index.html"
+}
